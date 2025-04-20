@@ -7,7 +7,7 @@ import os
 from flask import Flask, request, jsonify
 
 # Configure Gemini API
-genai.configure(api_key=os.getenv("GEMINI_API_KEY", "AIzaSyB2jJ2Ivc6rBziwAcxnWhV2s9C1jl8rn6Y"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY", "PASTE YOUR API KEY HERE"))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Load SentenceTransformer for embeddings
